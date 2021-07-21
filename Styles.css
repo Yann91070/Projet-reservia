@@ -1,0 +1,139 @@
+/*
+header{} <-- nom de l'élément: cible toutes les balises de type <header> de ta page
+.nomdeclasse <-- cible tous les éléments qui ont la classe <div class="nomdeclasse"></div>
+#nomduid <-- cible tous les éléments qui ont l'id <div id="nomduid"></div>
+*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-variableFont_wght.ttf");
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  margin: 10px;
+}
+
+li {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#localisation {
+  display: flex;
+}
+
+#information {
+  display: flex;
+}
+
+#fit {
+  display: flex;
+}
+
+#Hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#populaire {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 5px 5px;
+}
+
+article {
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+  margin-left: 50px;
+}
+
+.location {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #ddd;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 1px black;
+  padding-bottom: 0px;
+}
+
+#pls {
+  display: flex;
+}
+
+.interne {
+  flex-direction: column;
+}
+
+.activites {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+#acti {
+  flex-direction: column;
+}
+
+.pied {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #ddd;
+}
+
+#bas {
+  display: flex;
+  justify-content: space-around;
+}
+
+#infosupp {
+  align-content: left;
+}
+
+.logo1 {
+  width: 110px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.fond1 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.fond2 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.fond3 {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+}
