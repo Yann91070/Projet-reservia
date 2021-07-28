@@ -6,16 +6,31 @@ header{} <-- nom de l'élément: cible toutes les balises de type <header> de ta
 
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway-variableFont_wght.ttf");
+  src: url("Raleway-VariableFont_wght.ttf");
 }
+
 header {
   display: flex;
   justify-content: space-between;
+  font-family: "Raleway";
 }
 
 #menu {
   display: flex;
   margin: 10px;
+  color: blue;
+}
+
+#filter{
+display:flex;
+
+
+}
+
+nav a:hover {
+  color: blue;
+  border-top: 2px solid blue;
+  padding-top: 20px;
 }
 
 li {
@@ -26,9 +41,25 @@ ul {
   list-style-type: none;
 }
 
-#localisation {
-  display: flex;
+#localisation {position:relative; width:1040px; height:auto;}
+
+  .formulaire               {display:inline-block;}
+  .formulaire .champ       {width:200px; height:25px;}
+  
+
+
 }
+
+p1{
+  border: 1px solid #f2f2f2
+  border-radius: 5px;
+
+}
+
+#localisation{
+  display: flex; 
+}
+
 
 #information {
   display: flex;
@@ -39,16 +70,16 @@ ul {
 }
 
 #Hebergement {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
   border-radius: 5px 5px 5px 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
 #populaire {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   border-radius: 5px 5px 5px 5px;
+  grid-gap: 30px;
 }
 
 article {
@@ -66,21 +97,31 @@ aside {
 }
 
 .box {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 15px;
-  background-color: #ddd;
-  padding: 20px;
+  background-color: #f2f2f2;
+  padding: 30px;
   flex-wrap: wrap;
 }
 
 .card {
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
-  margin-bottom: 50px;
-  box-shadow: 2px 2px 1px black;
-  padding-bottom: 0px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
+}
+
+#Hebergement .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#populaire .card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 #pls {
@@ -106,12 +147,14 @@ aside {
 }
 
 #bas {
-  display: flex;
-  justify-content: space-around;
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr;
+  
 }
 
 #infosupp {
   align-content: left;
+  font-family: "Raleway";
 }
 
 .logo1 {
@@ -136,4 +179,47 @@ aside {
   width: 300px;
   height: 100px;
   object-fit: cover;
+}
+
+h1 {
+  font-family: "Raleway";
+}
+
+p {
+  font-family: "Raleway";
+}
+
+h2 {
+  font-family: "Raleway";
+}
+
+h3 {
+  font-family: "Raleway";
+}
+
+h4 {
+  font-family: "Raleway";
+}
+
+.choix{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30px;
+  height : 5 px;
+  width: 15%;
+  margin: 10px;
+  justify-content: center;
+  align-content: space-between;
+
+  transition-property: background-color
+  transition-duration: 5s;
+}
+
+.choix:hover{
+  background-color: blue;
+  color: white;
+}
+
+.titr{
+  align-content: space-between;
 }

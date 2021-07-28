@@ -12,7 +12,7 @@
     <div id="topsection">
       <header>
         <a href="Reservia@3x.png"><img class ="logo1" src="Reservia@3x.png" /></a>
-        <nav>
+        <nav class="navig1">
           <ul id="menu">
             <li><a href="#">Hébergement</a></li>
             <li><a href="#">Activités</a></li>
@@ -26,40 +26,49 @@
     </div>
 
     <div id="localisation">
-      <i class="fas fa-map-marker-alt"></i>
-      <form>
-        <input type="search" />
-        <input type="submit" value="rechercher" />
+      
+      <form action="" class="formulaire">
+        <i class="fas fa-map-marker-alt"></i>
+        <input class="champ" type ="text" value ="Marseille, France"/>
+        <p1>Rechercher</p1>
       </form>
     </div>
 
-    
-     
-      <form method="filtres" action="traitement.php">
-         
+         <div id ="filter">
         <p>
           Filtres :<br />
-          <input type="checkbox" name="Economique" id="Economique"<i class="fas fa-money-bill-wave-alt"></i>
-          <label for="Economique">Economique</label><br />
-          <input type="checkbox" name="Familial" id="Familial" <i class="fas fa-child"></i>
-          <label for="Familial">Familial</label><br />
-          <input type="checkbox" name="Romantique" id="Romantique" <i class="fas fa-heart"></i>
-          <label for="Romantique">Romantique</label><br />
-          <input
-            type="checkbox"
-            name="Animaux autorisés"
-            id="Animaux autorisés"
-            <i class="fas fa-dog"></i>
-          <label for="Animaux autorisés">Animaux autorisés</label>
-        </p>
-      
-      </form>
+          <div class="choix">
+            <p>
+              <i class="fas fa-money-bill-wave-alt"></i>
+            Economique</p>
+          </div>
+
+          <div class="choix">
+                <p>
+                  <i class="fas fa-child"></i>
+                Familial </p>
+              </div>
+
+              <div class="choix">
+                <p>
+                  <i class="fas fa-heart"></i>
+                Romantique</p>
+              </div>
+
+              <div class="choix">
+                <p>
+                  <i class="fas fa-dog"></i>
+                Animaux autorisés</p>
+              </div>
+          
+       
+      </div>
       
 
       <div id="information">
-         <i class="fas fa-info"></i>
+         
             <p>
-               Plus de 500 logements sont disponibles dans cette ville
+              <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
             </p>
        </div>
       </body>
@@ -150,11 +159,14 @@
    
 
        <aside class ="box">
-          <p>
-             <h3>Les plus populaires <i class="fas fa-chart-line"></i> </h3>
+          
+        
+          <span class ="titre"><h3>Les plus populaires <i class="fas fa-chart-line"></i> </h3></span>
+            
+          
              <div id="populaire">
             
-          </p>
+          
 
           <div class="card">
             <a href="#">
@@ -188,13 +200,16 @@
             <a href="#">
               <div id ="pls">
               <img src="images\hebergements\4_small\Blanc.jpg" alt="Hôtel Tout bleu et Blanc" />
+            
               <span class="interne">
+            
               <h4>Hôtel Tout bleu et Blanc</h4>
               <p>Nuit à partir de <strong>68€</strong></p>
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+           
             </span>
           </div>
-          </a>
+        </a>
           </div>
            
          
@@ -270,26 +285,26 @@
 
           <footer class="pied">
             <div id="bas">
-            <nav>
+            <nav class="navig2">
               <ul id="infosupp">
-                <p><strong></strong>A propos</strong></p>
+                <h3><strong>A propos</strong></h3>
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales de vente</a></li>
                 <li><a href="#">Données et confidentialité</a></li>
               </ul>
             </nav>
 
-            <nav>
+            <nav class="navig2">
               <ul id="infosupp">
-                <p><strong></strong>Nos hébergements</strong></p>
+                <h3><strong>Nos hébergements</strong></h3>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Soumettre votre hôtel</a></li>
               </ul>
             </nav>
 
-            <nav>
+            <nav class="navig2">
               <ul id="infosupp">
-                <p><strong></strong>Assitance</strong></p>
+                <h3><strong>Assitance</strong></h3>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
               </ul>
