@@ -41,25 +41,9 @@ ul {
   list-style-type: none;
 }
 
-#localisation {position:relative; width:1040px; height:auto;}
-
-  .formulaire               {display:inline-block;}
-  .formulaire .champ       {width:200px; height:25px;}
-  
-
-
-}
-
-p1{
-  border: 1px solid #f2f2f2
-  border-radius: 5px;
-
-}
-
 #localisation{
   display: flex; 
 }
-
 
 #information {
   display: flex;
@@ -136,6 +120,7 @@ aside {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 #acti {
   flex-direction: column;
