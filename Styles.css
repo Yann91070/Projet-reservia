@@ -2,6 +2,7 @@
 header{} <-- nom de l'élément: cible toutes les balises de type <header> de ta page
 .nomdeclasse <-- cible tous les éléments qui ont la classe <div class="nomdeclasse"></div>
 #nomduid <-- cible tous les éléments qui ont l'id <div id="nomduid"></div>
+.element1 .element2 <-- relation parent/enfant (element 2 est à l'intérieur d'élément 1)
 */
 
 @font-face {
@@ -15,23 +16,29 @@ header {
   font-family: "Raleway";
 }
 
+#topsection{
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
 #menu {
   display: flex;
   margin: 10px;
-  color: blue;
+  color: #0065FC;
 }
+
+.navig1 a:hover {
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 20px;
+}
+
 
 #filter{
 display:flex;
-
-
+margin-left: 45px;
 }
 
-nav a:hover {
-  color: blue;
-  border-top: 2px solid blue;
-  padding-top: 20px;
-}
 
 li {
   margin: 10px;
@@ -43,10 +50,13 @@ ul {
 
 #localisation{
   display: flex; 
+  margin: 2%;
+  margin-left : 45px;
 }
 
 #information {
   display: flex;
+  margin-left:45px;
 }
 
 #fit {
@@ -57,7 +67,8 @@ ul {
   display: grid;
   border-radius: 5px 5px 5px 5px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 50px;
+  margin-bottom: 27px;
 }
 
 #populaire {
@@ -78,6 +89,8 @@ aside {
 .location {
   display: flex;
   margin-bottom: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .box {
@@ -121,6 +134,8 @@ aside {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 #acti {
   flex-direction: column;
@@ -138,7 +153,7 @@ aside {
 }
 
 #infosupp {
-  align-content: left;
+  margin-left:30px;
   font-family: "Raleway";
 }
 
@@ -176,35 +191,113 @@ p {
 
 h2 {
   font-family: "Raleway";
+  margin-bottom: 3%;
+  margin-top:0;
 }
 
 h3 {
   font-family: "Raleway";
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 h4 {
   font-family: "Raleway";
+  margin:0;
 }
 
-.choix{
-  display: flex;
-  border: 1px solid black;
-  border-radius: 30px;
-  height : 5 px;
-  width: 15%;
-  margin: 10px;
-  justify-content: center;
-  align-content: space-between;
 
-  transition-property: background-color
-  transition-duration: 5s;
-}
+
 
 .choix:hover{
-  background-color: blue;
+  background-color:#0065FC;
   color: white;
 }
 
 .titr{
   align-content: space-between;
+}
+
+.choix p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.choix {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-content: space-between;
+  transition-property: background-color transition-duration: 5s;
+}
+
+.choix i {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #deebff
+}
+
+#acti .card{
+  padding-bottom:6%;
+}
+
+#infosupp li {
+  margin-left: 0;
+}
+
+.titre h3 {
+  display: flex;
+  justify-content : space-between;
+  margin-top:13px;
+}
+
+.titre p {
+  margin-top: 0;
+
+}
+
+.interne p{
+  margin-top:1%;
+}
+
+.cards {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
+  margin-bottom: 0;
+  margin-top:5%;
+}
+
+#acti .card{
+  margin-bottom: 36px;
+}
+
+.activites .card {
+  box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 5%);
+}
+
+.activites .cards {
+  box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 5%);
+}
+
+.titre h3{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 2px;
+}
+
+#infosupp h3{
+  margin-left: 0px;
+  margin-right: 0px;
 }

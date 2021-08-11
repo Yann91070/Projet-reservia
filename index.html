@@ -6,6 +6,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="petite_resolution.css" />
   </head>
 
   <body>
@@ -79,7 +80,7 @@
      
        <article class="box">
         <h2> Hébergement à Marseille</h2>
-         <p>
+         
           
           <div id="Hebergement">
             
@@ -87,10 +88,12 @@
               <a href="#">
                
                 <img src="images\hebergements\4_small\Aubergemini.jpg" alt="Auberge La Cannebiere" />
-              
+
+              <span class="interne">
                 <h4>Auberge La Cannebiere </h4>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                </span>
               </a>
             </div>
 
@@ -98,10 +101,11 @@
               <a href="#">
                
                 <img src="images\hebergements\4_small\hotel1.jpg" alt="Hôtel du port" />
-              
+                <span class="interne">
                 <h4>Hôtel du port </h4>
                 <p>Nuit à partir de <strong>52€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </span>
               </a>
             </div>
 
@@ -109,10 +113,11 @@
               <a href="#">
                
                 <img src="images\hebergements\4_small\mouettes.jpg" alt="Hôtel Les mouettes" />
-              
+                <span class="interne">
                 <h4>Hôtel Les mouettes </h4>
                 <p>Nuit à partir de <strong>76€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </span>
               </a>
             </div>
 
@@ -120,10 +125,11 @@
               <a href="#">
                
                 <img src="images\hebergements\4_small\mer.jpg" alt="Hôtel de La mer" />
-              
+                <span class="interne">
                 <h4>Hôtel de La mer </h4>
                 <p>Nuit à partir de <strong>46€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+              </span>
               </a>
             </div>
 
@@ -131,10 +137,11 @@
               <a href="#">
               
                 <img class ="fond1" src="images\hebergements\4_small\panier.jpg" alt="Auberge Le Panier" />
-              
+                <span class="interne">
                 <h4>Auberge Le Panier </h4>
                 <p>Nuit à partir de <strong>23€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </span>
               </a>
             </div>
 
@@ -142,15 +149,16 @@
               <a href="#">
                
                 <img src="images\hebergements\4_small\Amina.jpg" alt="Hôtel chez Amina" />
-              
+                <span class="interne">
                 <h4>Hôtel chez Amina </h4>
                 <p>Nuit à partir de <strong>96€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </span>
               </a>
             </div>
             
           </div>
-         </p>
+         
 
          <p><a href="#">Afficher plus</a></p>
 
@@ -161,7 +169,7 @@
        <aside class ="box">
           
         
-          <span class ="titre"><h3>Les plus populaires <i class="fas fa-chart-line"></i> </h3></span>
+          <span class ="titre"><h3><p>Les plus populaires</p> <i class="fas fa-chart-line"></i></h3> </span>
             
           
              <div id="populaire">
@@ -218,8 +226,11 @@
 
 
    </section>
-   <h2>Activités à Marseille</h2>
+
+   <h3>Activités à Marseille</h3>
+
    <section class="activites">
+
       
 
       <div class="card">
@@ -241,7 +252,7 @@
         </a>
       </div>
 
-      <div class="card">
+      <div class="cards">
         <a href="#">
          
           <img class = "fond3" src="images\hebergements\4_small\Iles.jpg" alt="Îles du Frioul" />
@@ -271,7 +282,7 @@
         </a>
       </div>
 
-      <div class="card">
+      <div class="cards">
         <a href="#">
          
           <img class = "fond3" src="images\hebergements\4_small\Parc.jpg" alt="Parc Longchamp" />
@@ -282,8 +293,9 @@
 
     </div>
    </section>
+  
 
-          <footer class="pied">
+  <footer class="pied">
             <div id="bas">
             <nav class="navig2">
               <ul id="infosupp">
@@ -311,5 +323,6 @@
             </nav>
 
           </div>
-          </footer> 
+    </footer> 
+  </body>
 </html>
