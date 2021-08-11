@@ -1,2 +1,49 @@
-@media smartphone {
+@media all and (max-width: 980 px) {
+  nav {
+    width: auto;
+    display: wrap-reverse;
+  }
+
+  nav ul {
+    flex-direction: auto;
+  }
+
+  nav li {
+    padding-left: 4px;
+  }
+
+  nav a {
+    font-size: 1.1em;
+  }
+
+  nav a:hover {
+    border-bottom: 0;
+  }
+
+  article,
+  aside {
+    width: auto;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  #hebergement {
+    display: flex;
+    flex-direction: column;
+  }
+  #bas {
+    flex-direction: column;
+  }
+  #activités {
+    flex-direction: column;
+  }
+
+  aside p:last-child {
+    text-align: center;
+  }
+
+  p {
+    color: black;
+    font-size: 1.2em;
+  }
 }
