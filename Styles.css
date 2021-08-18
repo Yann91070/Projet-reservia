@@ -33,6 +33,9 @@ header {
   padding-top: 20px;
 }
 
+a {
+  text-decoration: none;
+}
 
 #filter{
 display:flex;
@@ -52,6 +55,9 @@ ul {
   display: flex; 
   margin: 2%;
   margin-left : 45px;
+  border: 1px solid #ddd;
+  width: 359px;
+  border-radius: 15px;
 }
 
 #information {
@@ -125,8 +131,24 @@ aside {
   display: flex;
 }
 
+
 .interne {
   flex-direction: column;
+  padding: 15px;
+}
+
+#pl{
+  padding: 15px;
+}
+
+#pl i {
+  color:#0065FC;
+}
+
+#pl p{
+  color: black;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .activites {
@@ -204,10 +226,21 @@ h3 {
 h4 {
   font-family: "Raleway";
   margin:0;
+  color: black;
 }
 
+p1{
+  font-family: "Raleway";
+}
 
+p2{
+  font-family: "Raleway";
+  color: black;
+}
 
+#filter p1 {
+  margin-top: 28px;
+}
 
 .choix:hover{
   background-color:#0065FC;
@@ -222,20 +255,22 @@ h4 {
   display: flex;
   align-items: center;
   margin: 0;
+  padding-right: 15px;
 }
 
 .choix {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #ddd;
   border-radius: 30px;
-  margin: 10px;
+  margin: 10px 40px 10px 40px;
   justify-content: center;
   align-content: space-between;
   transition-property: background-color transition-duration: 5s;
+  
 }
 
 .choix i {
-  border: 1px solid black;
+  border: 1px solid #deebff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -243,7 +278,9 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #deebff
+  background-color: #deebff;
+  color: #0065FC;
+  margin-right: 10px;
 }
 
 #acti .card{
@@ -258,6 +295,7 @@ h4 {
   display: flex;
   justify-content : space-between;
   margin-top:13px;
+  padding: 0;
 }
 
 .titre p {
@@ -266,7 +304,10 @@ h4 {
 }
 
 .interne p{
-  margin-top:1%;
+
+  color:black;
+  margin: 10px;
+  margin-left: 0;
 }
 
 .cards {
@@ -300,4 +341,324 @@ h4 {
 #infosupp h3{
   margin-left: 0px;
   margin-right: 0px;
+  padding: 0;
+}
+
+.formulaire p1 {
+  border: 1px solid;
+  border-radius: 0px 13px 13px 0px;
+  padding: 13px;
+  background-color: #0065FC;
+  color: white;
+}
+
+.formulaire i {
+  border: 1px solid #ddd;
+  border-radius: 13px 0px 0px 13px;
+  padding: 13px;
+  background-color: #ddd;
+}
+
+  .formulaire .champ {
+    padding: 13px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid white;
+  }
+
+  #information i {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    margin-right: 10px;
+    display: flex;
+}
+
+#information p {
+  display: flex;
+  align-items: center;
+}
+
+.interne i{
+  color:#0065FC;
+ 
+}
+
+.activites p {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+#topsection h1 {
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+#topsection p {
+  margin-top: 0px;
+}
+
+#imge {
+  position:relative;
+  bottom:-40%;
+  }
+
+#infosupp a {
+color: black;
+}
+
+.dim{
+  display:none;
+}
+
+p2 a {
+  color: black;
+  font-weight: bold;
+}
+
+.file{
+  display:none;
+  font-family: "Raleway";
+}
+
+.autre a{
+  color:#0065FC;
+}
+
+.autre1 a{
+  color: #ddd;
+}
+
+.inscrire a{
+  color:#0065FC;
+  font-weight:bold;
+}
+p1.fil{
+margin-right: 30px;
+}
+
+
+@media all and (max-width: 980px) {
+  /*
+  nav ul {
+    flex-direction: auto;
+  }
+
+  nav li {
+    padding-left: 4px;
+  }
+
+  nav a {
+    font-size: 1.1em;
+  }
+
+  nav a:hover {
+    border-bottom: 0;
+  }
+
+  article,
+  aside {
+    width: auto;
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  #hebergement {
+    display: flex;
+    flex-direction: column;
+  }
+  #bas {
+    flex-direction: column;
+  }
+  #activités {
+    flex-direction: column;
+  }
+
+  aside p:last-child {
+    text-align: center;
+  }
+
+  p {
+    color: black;
+    font-size: 1.2em;
+    width:auto;
+  }
+  #box {
+    display: flex;
+  }
+
+  h1{
+font-size:auto;
+  }*/
+
+ header {
+  width: auto;
+  flex-direction: column; 
+}
+
+header .inscrire {
+position: absolute;
+right: 10px;
+top : 10px;
+}
+
+#filter{
+width:auto;
+flex-wrap:wrap;
+}
+
+.location{
+ 
+  flex-direction:column-reverse;
+}
+
+#filter .fil{
+  word-break:normal;
+}
+
+.box{
+  display:inline;
+  width: auto;
+}
+
+#bas{
+  display:flex;
+  flex-direction:column;
+}
+
+.activites{
+  display: flex;
+  flex-direction: column;
+  padding:30px;
+}
+
+#Hebergement{
+  display: flex;
+  width: auto;
+  flex-direction: column;
+}
+
+#information{
+  width:auto;
+}
+
+article {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display:inline;
+}
+
+article.box {
+  background-color:white;
+}
+
+.fond2{
+  width:100%;
+  height: 200px;
+}
+
+.fond3{
+  width:100%;
+  height: 200px;
+}
+
+#acti {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.normal{
+  display:none;
+}
+
+.dim{
+  display:inline;
+}
+
+.dim i{
+  background-color: #0065FC;
+  border-radius: 13px 13px 13px 13px;
+}
+
+#localisation{
+  width : 289px;
+}
+
+aside{
+  margin:0;
+
+}
+
+.inscrire a {
+  font-weight: bold;
+  color: #0065FC;
+}
+.autre a {
+  color:#0065FC;
+}
+
+li.autre {
+  width: 50%;
+  font-weight: bold;
+}
+
+.autre1 a {
+  color: #ddd;
+}
+
+li.autre1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  width: 50%;
+  margin-right: 0;
+  margin-left: 0;
+  font-weight:bold;
+  text-align: center;
+}
+#menu{
+  padding: 0;
+}
+
+.autre {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  width: 50%;
+  font-weight: bold;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+h3{
+  padding: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.file{
+  display:inline;
+  margin: 50px;
+}
+
+.fil{
+  display:none;
+}
+
+.choix{
+  margin: 10px 60px 10px 0;
+}
+
 }

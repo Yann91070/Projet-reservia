@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content ="width=980"/>
-    <script
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
       src="https://kit.fontawesome.com/5973e9b992.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="Styles.css" />
-    <link rel="stylesheet" media="screen and (max-width: 980px)" href="smartphone.css" />
-    <title>Media queries</title>
+        <title>Media queries</title>
   </head>
 
   <body>
@@ -17,9 +16,9 @@
         <a href="Reservia@3x.png"><img class ="logo1" src="Reservia@3x.png" /></a>
         <nav class="navig1">
           <ul id="menu">
-            <li><a href="#">Hébergement</a></li>
-            <li><a href="#">Activités</a></li>
-            <li><a href="#">S'inscrire</a></li>
+            <li class="autre"><a href="#">Hébergement</a></li>
+            <li class="autre1"><a href="#">Activités</a></li>
+            <li class="inscrire"><a href="#">S'inscrire</a></li>
           </ul>
         </nav>
       </header>
@@ -33,35 +32,45 @@
       <form action="" class="formulaire">
         <i class="fas fa-map-marker-alt"></i>
         <input class="champ" type ="text" value ="Marseille, France"/>
-        <p1>Rechercher</p1>
+        <span class="normal">
+        <p1><strong>Rechercher</strong></p1>
+        </span>
+        <span class="dim">
+          <i class="fas fa-search"></i>
+        </span>
+
       </form>
     </div>
-
+          <p4 class ="file">
+          <strong>Filtres</strong> <br>
+          </p4>
          <div id ="filter">
-        <p>
-          Filtres :<br />
+        <p1 class ="fil">
+          <strong>Filtres</strong> <br/>
+          </p1>
+          
           <div class="choix">
             <p>
               <i class="fas fa-money-bill-wave-alt"></i>
-            Economique</p>
+              <strong>Economique</strong></p>
           </div>
 
           <div class="choix">
                 <p>
                   <i class="fas fa-child"></i>
-                Familial </p>
+                  <strong>Familial </strong></p>
               </div>
 
               <div class="choix">
                 <p>
                   <i class="fas fa-heart"></i>
-                Romantique</p>
+                  <strong>Romantique</strong></p>
               </div>
 
               <div class="choix">
                 <p>
                   <i class="fas fa-dog"></i>
-                Animaux autorisés</p>
+                  <strong>Animaux autorisés</strong></p>
               </div>
           
        
@@ -81,21 +90,22 @@
      
      
        <article class="box">
-        <h2> Hébergement à Marseille</h2>
+        <h2> Hébergements à Marseille</h2>
          
           
           <div id="Hebergement">
             
             <div class="card">
               <a href="#">
-               
+                
                 <img src="images\hebergements\4_small\Aubergemini.jpg" alt="Auberge La Cannebiere" />
 
-              <span class="interne">
+                <div id="pl">
                 <h4>Auberge La Cannebiere </h4>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                </span>
+                
+              </div>
               </a>
             </div>
 
@@ -103,66 +113,71 @@
               <a href="#">
                
                 <img src="images\hebergements\4_small\hotel1.jpg" alt="Hôtel du port" />
-                <span class="interne">
+                <div id="pl">
                 <h4>Hôtel du port </h4>
                 <p>Nuit à partir de <strong>52€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </span>
+              
+            </div>
               </a>
             </div>
 
             <div class="card">
               <a href="#">
-               
+                
                 <img src="images\hebergements\4_small\mouettes.jpg" alt="Hôtel Les mouettes" />
-                <span class="interne">
+                <div id="pl">
                 <h4>Hôtel Les mouettes </h4>
                 <p>Nuit à partir de <strong>76€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-              </span>
+      
+            </div>
               </a>
             </div>
 
             <div class="card">
               <a href="#">
-               
+                
                 <img src="images\hebergements\4_small\mer.jpg" alt="Hôtel de La mer" />
-                <span class="interne">
+                <div id="pl">
                 <h4>Hôtel de La mer </h4>
                 <p>Nuit à partir de <strong>46€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-              </span>
-              </a>
-            </div>
-
-            <div class="card">
-              <a href="#">
               
-                <img class ="fond1" src="images\hebergements\4_small\panier.jpg" alt="Auberge Le Panier" />
-                <span class="interne">
-                <h4>Auberge Le Panier </h4>
-                <p>Nuit à partir de <strong>23€</strong></p>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-              </span>
+            </div>
               </a>
             </div>
 
             <div class="card">
               <a href="#">
                
+                <img class ="fond1" src="images\hebergements\4_small\panier.jpg" alt="Auberge Le Panier" />
+                <div id="pl">
+                <h4>Auberge Le Panier </h4>
+                <p>Nuit à partir de <strong>23€</strong></p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              
+            </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="#">
+                
                 <img src="images\hebergements\4_small\Amina.jpg" alt="Hôtel chez Amina" />
-                <span class="interne">
+                <div id="pl">
                 <h4>Hôtel chez Amina </h4>
                 <p>Nuit à partir de <strong>96€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              </span>
+              
+            </div>
               </a>
             </div>
             
           </div>
          
 
-         <p><a href="#">Afficher plus</a></p>
+         <p2><a href="#">Afficher plus</a></p2>
 
       </article>
       
@@ -186,8 +201,9 @@
                    <span class="interne">
                     <h4>Hôtel Le soleil du matin </h4>
                   <p>Nuit à partir de <strong>128€</strong><br/></p>
+                  <div id="imge">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            
+            </div>
             </span>
             </div>
             </a>
@@ -200,7 +216,9 @@
               <span class="interne">
               <h4>Au coeur de l'eau Chambres d'hôtes </h4>
               <p>Nuit à partir de <strong>71€</strong></p>
+              <div id="imge">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
             </span>
             </div>
             </a>
@@ -215,8 +233,9 @@
             
               <h4>Hôtel Tout bleu et Blanc</h4>
               <p>Nuit à partir de <strong>68€</strong></p>
+              <div id="imge">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-           
+              </div>
             </span>
           </div>
         </a>

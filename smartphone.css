@@ -24,7 +24,7 @@
   aside {
     width: auto;
     margin-bottom: 15px;
-    display: block;
+    display: flex;
   }
 
   #hebergement {
@@ -45,5 +45,8 @@
   p {
     color: black;
     font-size: 1.2em;
+  }
+  #box {
+    display: flex;
   }
 }
