@@ -45,8 +45,13 @@
   p {
     color: black;
     font-size: 1.2em;
+    width: auto;
   }
   #box {
     display: flex;
+  }
+
+  h1 {
+    font-size: auto;
   }
 }

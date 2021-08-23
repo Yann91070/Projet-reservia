@@ -16,6 +16,10 @@ header {
   font-family: "Raleway";
 }
 
+body{
+  margin:0;
+}
+
 #topsection{
   margin-left: 45px;
   margin-right: 45px;
@@ -52,12 +56,12 @@ ul {
 }
 
 #localisation{
-  display: flex; 
   margin: 2%;
   margin-left : 45px;
   border: 1px solid #ddd;
-  width: 359px;
+  width: 361px;
   border-radius: 15px;
+  overflow:hidden;
 }
 
 #information {
@@ -123,7 +127,7 @@ aside {
 
 #populaire .card img {
   width: 150px;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -133,8 +137,10 @@ aside {
 
 
 .interne {
+  display: flex;
   flex-direction: column;
   padding: 15px;
+  justify-content: space-between;
 }
 
 #pl{
@@ -153,12 +159,15 @@ aside {
 
 .activites {
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  margin-left: 45px;
-  margin-right: 45px;
+    display: grid;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 45px;
+    margin-right: 45px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
 }
+
 #acti {
   flex-direction: column;
 }
@@ -175,8 +184,10 @@ aside {
 }
 
 #infosupp {
-  margin-left:30px;
   font-family: "Raleway";
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .logo1 {
@@ -192,13 +203,13 @@ aside {
 }
 
 .fond2 {
-  width: 300px;
+  width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
 .fond3 {
-  width: 300px;
+  width: 100%;
   height: 100px;
   object-fit: cover;
 }
@@ -345,15 +356,16 @@ p2{
 }
 
 .formulaire p1 {
-  border: 1px solid;
+  border: 1px solid #0065FC;
   border-radius: 0px 13px 13px 0px;
   padding: 13px;
   background-color: #0065FC;
   color: white;
+
 }
 
 .formulaire i {
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 13px 0px 0px 13px;
   padding: 13px;
   background-color: #ddd;
@@ -364,6 +376,7 @@ p2{
     margin-left: 0;
     margin-right: 0;
     border: 1px solid white;
+    flex-grow:1;
   }
 
   #information i {
@@ -405,10 +418,7 @@ p2{
   margin-top: 0px;
 }
 
-#imge {
-  position:relative;
-  bottom:-40%;
-  }
+
 
 #infosupp a {
 color: black;
@@ -591,10 +601,11 @@ h2{
 .dim i{
   background-color: #0065FC;
   border-radius: 13px 13px 13px 13px;
+  border: 2px solid #0065fc;
 }
 
 #localisation{
-  width : 289px;
+  width : 293px;
 }
 
 aside{
