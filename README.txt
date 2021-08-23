@@ -18,7 +18,7 @@ Contraintes
 
 - La police du site est Raleway.
 
-Voici le liens vers github Pages pour visionner le site : 
+Voici le liens vers github Pages pour visionner le site : https://yann91070.github.io/Projet-reservia/
 
 Yann Berthonneau
 
