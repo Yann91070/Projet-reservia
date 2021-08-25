@@ -144,15 +144,15 @@ aside {
   justify-content: space-between;
 }
 
-#pl{
+#deux{
   padding: 15px;
 }
 
-#pl i {
+#deux i {
   color:#0065FC;
 }
 
-#pl p{
+#deux p{
   color: black;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -366,7 +366,7 @@ p2{
   padding: 13px;
   background-color: #0065FC;
   color: white;
-
+  margin: 0;
 }
 
 .formulaire i {
