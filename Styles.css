@@ -133,7 +133,7 @@ aside {
   object-fit: cover;
 }
 
-#pls {
+.pls {
   display: flex;
 }
 
@@ -145,15 +145,15 @@ aside {
   justify-content: space-between;
 }
 
-#svp{
+.svp{
   padding: 15px;
 }
 
-#svp i {
+.svp i {
   color:#0065FC;
 }
 
-#svp p{
+.svp p{
   color: black;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -170,7 +170,7 @@ aside {
     grid-gap: 50px;
 }
 
-#acti {
+.acti {
   flex-direction: column;
 }
 
@@ -185,7 +185,7 @@ aside {
   
 }
 
-#infosupp {
+.infosupp {
   font-family: "Raleway";
   margin-left: 10px;
   margin-top: 30px;
@@ -300,11 +300,11 @@ p{
   margin-right: 10px;
 }
 
-#acti .card{
+.acti .card{
   padding-bottom:6%;
 }
 
-#infosupp li {
+.infosupp li {
   margin-left: 0;
 }
 
@@ -340,7 +340,7 @@ p{
   margin-top:5%;
 }
 
-#acti .card{
+.acti .card{
   margin-bottom: 36px;
 }
 
@@ -354,7 +354,7 @@ p{
 
 
 
-#infosupp h3{
+.infosupp h3{
   margin-left: 0px;
   margin-right: 0px;
   padding: 0;
@@ -378,15 +378,15 @@ p{
   background-color: #ddd;
 }
 
-  .formulaire .champ {
+.formulaire .champ {
     padding: 13px;
     margin-left: 0;
     margin-right: 0;
     border: 1px solid white;
     flex-grow:1;
-  }
+}
 
-  #information i {
+#information i {
     border: 1px solid #ddd;
     border-radius: 50%;
     width: 30px;
@@ -427,7 +427,7 @@ p{
 
 
 
-#infosupp a {
+.infosupp a {
 color: black;
 }
 
@@ -435,7 +435,7 @@ color: black;
   display:none;
 }
 
-p2 a {
+p a {
   color: black;
   font-weight: bold;
 }
@@ -690,6 +690,10 @@ h3{
 
 .formulaire p{
   display: none;
+}
+
+.navig2 h3{
+  margin: 0;
 }
 
 }
