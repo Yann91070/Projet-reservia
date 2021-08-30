@@ -161,13 +161,13 @@ aside {
 
 #activites {
   background-color: rgb(255, 255, 255);
-    display: grid;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    margin-left: 45px;
-    margin-right: 45px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 50px;
+  display: grid;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
 }
 
 .acti {
