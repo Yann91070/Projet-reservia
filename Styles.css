@@ -98,7 +98,7 @@ aside {
   margin-left: 50px;
 }
 
-.location {
+#location {
   display: flex;
   margin-bottom: 20px;
   margin-left: 45px;
@@ -159,7 +159,7 @@ aside {
   margin-bottom: 7px;
 }
 
-.activites {
+#activites {
   background-color: rgb(255, 255, 255);
     display: grid;
     justify-content: space-between;
@@ -344,11 +344,11 @@ p{
   margin-bottom: 36px;
 }
 
-.activites .card {
+#activites .card {
   box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 5%);
 }
 
-.activites .cards {
+#activites .cards {
   box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 5%);
 }
 
@@ -409,7 +409,7 @@ p{
  
 }
 
-.activites p {
+#activites p {
   color: black;
   font-weight: bold;
   margin-bottom: 10px;
@@ -536,7 +536,7 @@ width:auto;
 flex-wrap:wrap;
 }
 
-.location{
+#location{
  
   flex-direction:column-reverse;
 }
@@ -555,7 +555,7 @@ flex-wrap:wrap;
   flex-direction:column;
 }
 
-.activites{
+#activites{
   display: flex;
   flex-direction: column;
   padding:30px;
